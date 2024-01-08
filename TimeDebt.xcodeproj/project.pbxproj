@@ -1,0 +1,582 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7CE00C302B4BAE7E0041309D /* TimeDebtApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE00C2F2B4BAE7E0041309D /* TimeDebtApp.swift */; };
+		7CE00C322B4BAE7E0041309D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE00C312B4BAE7E0041309D /* ContentView.swift */; };
+		7CE00C342B4BAE7F0041309D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CE00C332B4BAE7F0041309D /* Assets.xcassets */; };
+		7CE00C372B4BAE7F0041309D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CE00C362B4BAE7F0041309D /* Preview Assets.xcassets */; };
+		7CE00C412B4BAE7F0041309D /* TimeDebtTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE00C402B4BAE7F0041309D /* TimeDebtTests.swift */; };
+		7CE00C4B2B4BAE7F0041309D /* TimeDebtUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE00C4A2B4BAE7F0041309D /* TimeDebtUITests.swift */; };
+		7CE00C4D2B4BAE7F0041309D /* TimeDebtUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE00C4C2B4BAE7F0041309D /* TimeDebtUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7CE00C3D2B4BAE7F0041309D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7CE00C242B4BAE7E0041309D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7CE00C2B2B4BAE7E0041309D;
+			remoteInfo = TimeDebt;
+		};
+		7CE00C472B4BAE7F0041309D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7CE00C242B4BAE7E0041309D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7CE00C2B2B4BAE7E0041309D;
+			remoteInfo = TimeDebt;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7CE00C2C2B4BAE7E0041309D /* TimeDebt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeDebt.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CE00C2F2B4BAE7E0041309D /* TimeDebtApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeDebtApp.swift; sourceTree = "<group>"; };
+		7CE00C312B4BAE7E0041309D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7CE00C332B4BAE7F0041309D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7CE00C362B4BAE7F0041309D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7CE00C3C2B4BAE7F0041309D /* TimeDebtTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimeDebtTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CE00C402B4BAE7F0041309D /* TimeDebtTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeDebtTests.swift; sourceTree = "<group>"; };
+		7CE00C462B4BAE7F0041309D /* TimeDebtUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimeDebtUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CE00C4A2B4BAE7F0041309D /* TimeDebtUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeDebtUITests.swift; sourceTree = "<group>"; };
+		7CE00C4C2B4BAE7F0041309D /* TimeDebtUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeDebtUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7CE00C292B4BAE7E0041309D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CE00C392B4BAE7F0041309D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CE00C432B4BAE7F0041309D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7CE00C232B4BAE7E0041309D = {
+			isa = PBXGroup;
+			children = (
+				7CE00C2E2B4BAE7E0041309D /* TimeDebt */,
+				7CE00C3F2B4BAE7F0041309D /* TimeDebtTests */,
+				7CE00C492B4BAE7F0041309D /* TimeDebtUITests */,
+				7CE00C2D2B4BAE7E0041309D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7CE00C2D2B4BAE7E0041309D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7CE00C2C2B4BAE7E0041309D /* TimeDebt.app */,
+				7CE00C3C2B4BAE7F0041309D /* TimeDebtTests.xctest */,
+				7CE00C462B4BAE7F0041309D /* TimeDebtUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7CE00C2E2B4BAE7E0041309D /* TimeDebt */ = {
+			isa = PBXGroup;
+			children = (
+				7CE00C2F2B4BAE7E0041309D /* TimeDebtApp.swift */,
+				7CE00C312B4BAE7E0041309D /* ContentView.swift */,
+				7CE00C332B4BAE7F0041309D /* Assets.xcassets */,
+				7CE00C352B4BAE7F0041309D /* Preview Content */,
+			);
+			path = TimeDebt;
+			sourceTree = "<group>";
+		};
+		7CE00C352B4BAE7F0041309D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				7CE00C362B4BAE7F0041309D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7CE00C3F2B4BAE7F0041309D /* TimeDebtTests */ = {
+			isa = PBXGroup;
+			children = (
+				7CE00C402B4BAE7F0041309D /* TimeDebtTests.swift */,
+			);
+			path = TimeDebtTests;
+			sourceTree = "<group>";
+		};
+		7CE00C492B4BAE7F0041309D /* TimeDebtUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7CE00C4A2B4BAE7F0041309D /* TimeDebtUITests.swift */,
+				7CE00C4C2B4BAE7F0041309D /* TimeDebtUITestsLaunchTests.swift */,
+			);
+			path = TimeDebtUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7CE00C2B2B4BAE7E0041309D /* TimeDebt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7CE00C502B4BAE7F0041309D /* Build configuration list for PBXNativeTarget "TimeDebt" */;
+			buildPhases = (
+				7CE00C282B4BAE7E0041309D /* Sources */,
+				7CE00C292B4BAE7E0041309D /* Frameworks */,
+				7CE00C2A2B4BAE7E0041309D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TimeDebt;
+			productName = TimeDebt;
+			productReference = 7CE00C2C2B4BAE7E0041309D /* TimeDebt.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7CE00C3B2B4BAE7F0041309D /* TimeDebtTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7CE00C532B4BAE7F0041309D /* Build configuration list for PBXNativeTarget "TimeDebtTests" */;
+			buildPhases = (
+				7CE00C382B4BAE7F0041309D /* Sources */,
+				7CE00C392B4BAE7F0041309D /* Frameworks */,
+				7CE00C3A2B4BAE7F0041309D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7CE00C3E2B4BAE7F0041309D /* PBXTargetDependency */,
+			);
+			name = TimeDebtTests;
+			productName = TimeDebtTests;
+			productReference = 7CE00C3C2B4BAE7F0041309D /* TimeDebtTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7CE00C452B4BAE7F0041309D /* TimeDebtUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7CE00C562B4BAE7F0041309D /* Build configuration list for PBXNativeTarget "TimeDebtUITests" */;
+			buildPhases = (
+				7CE00C422B4BAE7F0041309D /* Sources */,
+				7CE00C432B4BAE7F0041309D /* Frameworks */,
+				7CE00C442B4BAE7F0041309D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7CE00C482B4BAE7F0041309D /* PBXTargetDependency */,
+			);
+			name = TimeDebtUITests;
+			productName = TimeDebtUITests;
+			productReference = 7CE00C462B4BAE7F0041309D /* TimeDebtUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7CE00C242B4BAE7E0041309D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					7CE00C2B2B4BAE7E0041309D = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					7CE00C3B2B4BAE7F0041309D = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 7CE00C2B2B4BAE7E0041309D;
+					};
+					7CE00C452B4BAE7F0041309D = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 7CE00C2B2B4BAE7E0041309D;
+					};
+				};
+			};
+			buildConfigurationList = 7CE00C272B4BAE7E0041309D /* Build configuration list for PBXProject "TimeDebt" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7CE00C232B4BAE7E0041309D;
+			productRefGroup = 7CE00C2D2B4BAE7E0041309D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7CE00C2B2B4BAE7E0041309D /* TimeDebt */,
+				7CE00C3B2B4BAE7F0041309D /* TimeDebtTests */,
+				7CE00C452B4BAE7F0041309D /* TimeDebtUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7CE00C2A2B4BAE7E0041309D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CE00C372B4BAE7F0041309D /* Preview Assets.xcassets in Resources */,
+				7CE00C342B4BAE7F0041309D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CE00C3A2B4BAE7F0041309D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CE00C442B4BAE7F0041309D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7CE00C282B4BAE7E0041309D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CE00C322B4BAE7E0041309D /* ContentView.swift in Sources */,
+				7CE00C302B4BAE7E0041309D /* TimeDebtApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CE00C382B4BAE7F0041309D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CE00C412B4BAE7F0041309D /* TimeDebtTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CE00C422B4BAE7F0041309D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CE00C4D2B4BAE7F0041309D /* TimeDebtUITestsLaunchTests.swift in Sources */,
+				7CE00C4B2B4BAE7F0041309D /* TimeDebtUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7CE00C3E2B4BAE7F0041309D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7CE00C2B2B4BAE7E0041309D /* TimeDebt */;
+			targetProxy = 7CE00C3D2B4BAE7F0041309D /* PBXContainerItemProxy */;
+		};
+		7CE00C482B4BAE7F0041309D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7CE00C2B2B4BAE7E0041309D /* TimeDebt */;
+			targetProxy = 7CE00C472B4BAE7F0041309D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		7CE00C4E2B4BAE7F0041309D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7CE00C4F2B4BAE7F0041309D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7CE00C512B4BAE7F0041309D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TimeDebt/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.VanTruong.TimeDebt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7CE00C522B4BAE7F0041309D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TimeDebt/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.VanTruong.TimeDebt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7CE00C542B4BAE7F0041309D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.VanTruong.TimeDebtTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TimeDebt.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TimeDebt";
+			};
+			name = Debug;
+		};
+		7CE00C552B4BAE7F0041309D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.VanTruong.TimeDebtTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TimeDebt.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TimeDebt";
+			};
+			name = Release;
+		};
+		7CE00C572B4BAE7F0041309D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.VanTruong.TimeDebtUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TimeDebt;
+			};
+			name = Debug;
+		};
+		7CE00C582B4BAE7F0041309D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.VanTruong.TimeDebtUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TimeDebt;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7CE00C272B4BAE7E0041309D /* Build configuration list for PBXProject "TimeDebt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CE00C4E2B4BAE7F0041309D /* Debug */,
+				7CE00C4F2B4BAE7F0041309D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7CE00C502B4BAE7F0041309D /* Build configuration list for PBXNativeTarget "TimeDebt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CE00C512B4BAE7F0041309D /* Debug */,
+				7CE00C522B4BAE7F0041309D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7CE00C532B4BAE7F0041309D /* Build configuration list for PBXNativeTarget "TimeDebtTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CE00C542B4BAE7F0041309D /* Debug */,
+				7CE00C552B4BAE7F0041309D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7CE00C562B4BAE7F0041309D /* Build configuration list for PBXNativeTarget "TimeDebtUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CE00C572B4BAE7F0041309D /* Debug */,
+				7CE00C582B4BAE7F0041309D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7CE00C242B4BAE7E0041309D /* Project object */;
+}
