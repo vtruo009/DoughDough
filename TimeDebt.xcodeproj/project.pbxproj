@@ -14,6 +14,9 @@
 		7CE00C412B4BAE7F0041309D /* TimeDebtTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE00C402B4BAE7F0041309D /* TimeDebtTests.swift */; };
 		7CE00C4B2B4BAE7F0041309D /* TimeDebtUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE00C4A2B4BAE7F0041309D /* TimeDebtUITests.swift */; };
 		7CE00C4D2B4BAE7F0041309D /* TimeDebtUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE00C4C2B4BAE7F0041309D /* TimeDebtUITestsLaunchTests.swift */; };
+		7CE00C5B2B4BB1690041309D /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE00C5A2B4BB1690041309D /* Task.swift */; };
+		7CE00C5E2B4BDEFE0041309D /* TodayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE00C5D2B4BDEFD0041309D /* TodayView.swift */; };
+		7CE00C612B4BE0170041309D /* TaskData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE00C602B4BE0170041309D /* TaskData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		7CE00C462B4BAE7F0041309D /* TimeDebtUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimeDebtUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CE00C4A2B4BAE7F0041309D /* TimeDebtUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeDebtUITests.swift; sourceTree = "<group>"; };
 		7CE00C4C2B4BAE7F0041309D /* TimeDebtUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeDebtUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7CE00C5A2B4BB1690041309D /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		7CE00C5D2B4BDEFD0041309D /* TodayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayView.swift; sourceTree = "<group>"; };
+		7CE00C602B4BE0170041309D /* TaskData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +100,9 @@
 		7CE00C2E2B4BAE7E0041309D /* TimeDebt */ = {
 			isa = PBXGroup;
 			children = (
+				7CE00C5F2B4BE0010041309D /* ViewModels */,
+				7CE00C5C2B4BDED40041309D /* Views */,
+				7CE00C592B4BAF180041309D /* Models */,
 				7CE00C2F2B4BAE7E0041309D /* TimeDebtApp.swift */,
 				7CE00C312B4BAE7E0041309D /* ContentView.swift */,
 				7CE00C332B4BAE7F0041309D /* Assets.xcassets */,
@@ -125,6 +134,30 @@
 				7CE00C4C2B4BAE7F0041309D /* TimeDebtUITestsLaunchTests.swift */,
 			);
 			path = TimeDebtUITests;
+			sourceTree = "<group>";
+		};
+		7CE00C592B4BAF180041309D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7CE00C5A2B4BB1690041309D /* Task.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7CE00C5C2B4BDED40041309D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7CE00C5D2B4BDEFD0041309D /* TodayView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7CE00C5F2B4BE0010041309D /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				7CE00C602B4BE0170041309D /* TaskData.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +291,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				7CE00C322B4BAE7E0041309D /* ContentView.swift in Sources */,
+				7CE00C5B2B4BB1690041309D /* Task.swift in Sources */,
+				7CE00C5E2B4BDEFE0041309D /* TodayView.swift in Sources */,
 				7CE00C302B4BAE7E0041309D /* TimeDebtApp.swift in Sources */,
+				7CE00C612B4BE0170041309D /* TaskData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
