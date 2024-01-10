@@ -17,23 +17,15 @@ struct TodayView: View {
                     Text(task.title)
                 }
             }
+            .background(.white)
+            .scrollContentBackground(.hidden)
         }
-        .navigationBarTitleDisplayMode(.inline)
+        .navigationTitle("Today")
         .toolbar {
-            ToolbarItem(placement: .principal) {
-                Text("Today")
-                    .font(.system(size: 50))
-                    .foregroundColor(.white)
-            }
-            ToolbarItem(placement: .cancellationAction) {
-                Image(systemName: "line.3.horizontal")
-                    .resizable()
-                    .frame(width: 32, height: 32)
-                    .foregroundColor(.white)
+            ToolbarItem {
+                Image(systemName: "plus")
             }
         }
-        .toolbarBackground(.visible, for: .navigationBar)
-        .toolbarBackground(Color.black, for: .navigationBar)
     }
 }
 
