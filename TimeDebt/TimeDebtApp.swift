@@ -11,9 +11,7 @@ import SwiftUI
 struct TimeDebtApp: App {
     var body: some Scene {
         WindowGroup {
-            NavigationStack {
-                TodayView().environmentObject(TaskData())
-            }
+                MainTabView().environmentObject(TaskData())
         }
     }
 }

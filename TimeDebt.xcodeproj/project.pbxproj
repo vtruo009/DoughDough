@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7CCECADB2B50C18200618F85 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCECADA2B50C18200618F85 /* MainTabView.swift */; };
 		7CE00C302B4BAE7E0041309D /* TimeDebtApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE00C2F2B4BAE7E0041309D /* TimeDebtApp.swift */; };
 		7CE00C322B4BAE7E0041309D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE00C312B4BAE7E0041309D /* ContentView.swift */; };
 		7CE00C342B4BAE7F0041309D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CE00C332B4BAE7F0041309D /* Assets.xcassets */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7CCECADA2B50C18200618F85 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		7CE00C2C2B4BAE7E0041309D /* TimeDebt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeDebt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CE00C2F2B4BAE7E0041309D /* TimeDebtApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeDebtApp.swift; sourceTree = "<group>"; };
 		7CE00C312B4BAE7E0041309D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				7CE00C5D2B4BDEFD0041309D /* TodayView.swift */,
+				7CCECADA2B50C18200618F85 /* MainTabView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -295,6 +298,7 @@
 				7CE00C5E2B4BDEFE0041309D /* TodayView.swift in Sources */,
 				7CE00C302B4BAE7E0041309D /* TimeDebtApp.swift in Sources */,
 				7CE00C612B4BE0170041309D /* TaskData.swift in Sources */,
+				7CCECADB2B50C18200618F85 /* MainTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
