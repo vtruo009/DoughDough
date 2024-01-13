@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct TodayView: View {
-    @EnvironmentObject var tasks: TaskData
+    @EnvironmentObject var itemData: ItemData
     
     init() {
         UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor: UIColor.orange]
@@ -16,20 +16,19 @@ struct TodayView: View {
     
     var body: some View {
         NavigationStack {
-            VStack {
-                List {
-                    ForEach(tasks.testTasks, id: \.self.id) { task in
-                        Text(task.title)
-                    }
+            List {
+                ForEach(itemData.testItems, id: \.self.id) { item in
+                    ItemView(item: item)
                 }
-                .background(.white)
-                .scrollContentBackground(.hidden)
             }
+            .listStyle(PlainListStyle())
+            .background(.white)
+            .scrollContentBackground(.hidden)
             .navigationTitle("Today")
             .toolbar {
                 ToolbarItem {
                     Button {
-                        print("add new task")
+                        print("add new item")
                     } label: {
                         Image(systemName: "plus").foregroundColor(.orange)
                     }
@@ -41,6 +40,6 @@ struct TodayView: View {
 
 struct TodayView_Previews: PreviewProvider {
     static var previews: some View {
-            TodayView().environmentObject(TaskData())
+            TodayView().environmentObject(ItemData())
     }
 }

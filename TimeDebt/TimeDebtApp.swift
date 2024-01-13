@@ -11,7 +11,7 @@ import SwiftUI
 struct TimeDebtApp: App {
     var body: some Scene {
         WindowGroup {
-                MainTabView().environmentObject(TaskData())
+                MainTabView().environmentObject(ItemData())
         }
     }
 }
