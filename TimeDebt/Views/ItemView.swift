@@ -11,13 +11,21 @@ struct ItemView: View {
     var item: Item
     
     var body: some View {
-        HStack {
+        HStack(alignment: .top) {
             Button {
                 print("Done!")
             } label: {
-                Image(systemName: "circle")
+                Image(systemName: item.done ? "circle.inset.filled" : "circle")
             }
-            Text("\(item.title)")
+            VStack(alignment: .leading) {
+                Text("\(item.title)")
+                Text(item.notes)
+                    .font(.footnote)
+                    .foregroundColor(.gray)
+                Text("\(item.timeToComplete) mins")
+                    .font(.footnote)
+                    .foregroundColor(.gray)
+            }
             Spacer()
         }
     }
