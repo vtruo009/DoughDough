@@ -1,14 +1,14 @@
 //
-//  TimeDebtTests.swift
-//  TimeDebtTests
+//  DoughDoughTests.swift
+//  DoughDoughTests
 //
 //  Created by Van Truong on 1/7/24.
 //
 
 import XCTest
-@testable import TimeDebt
+@testable import DoughDough
 
-final class TimeDebtTests: XCTestCase {
+final class DoughDoughTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

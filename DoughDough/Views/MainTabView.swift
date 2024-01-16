@@ -1,6 +1,6 @@
 //
 //  MainTabView.swift
-//  TimeDebt
+//  DoughDough
 //
 //  Created by Van Truong on 1/11/24.
 //

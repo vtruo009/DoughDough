@@ -1,13 +1,13 @@
 //
-//  TimeDebtUITestsLaunchTests.swift
-//  TimeDebtUITests
+//  DoughDoughUITestsLaunchTests.swift
+//  DoughDoughUITests
 //
 //  Created by Van Truong on 1/7/24.
 //
 
 import XCTest
 
-final class TimeDebtUITestsLaunchTests: XCTestCase {
+final class DoughDoughUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true

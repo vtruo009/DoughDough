@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  TimeDebt
+//  DoughDough
 //
 //  Created by Van Truong on 1/7/24.
 //
