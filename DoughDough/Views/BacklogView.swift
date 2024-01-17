@@ -1,38 +1,36 @@
 //
-//  TodayView.swift
+//  BacklogView.swift
 //  DoughDough
 //
-//  Created by Van Truong on 1/7/24.
+//  Created by Van Truong on 1/16/24.
 //
 
 import SwiftUI
 
-struct TodayView: View {
+struct BacklogView: View {
     @EnvironmentObject var itemData: ItemData
     
     init() {
-        UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor: UIColor.orange]
+        UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor: UIColor.red]
     }
     
     var body: some View {
         NavigationStack {
             List {
-                ForEach(itemData.testItems, id: \.self.id) { item in
-                    if let date = item.dateAssigned {
-                        ItemView(item: item)
-                    }
+                ForEach(itemData.backlogItems(), id: \.self.id) { item in
+                    ItemView(item: item)
                 }
             }
             .listStyle(PlainListStyle())
             .background(.white)
             .scrollContentBackground(.hidden)
-            .navigationTitle("Today")
+            .navigationTitle("Backlog")
             .toolbar {
                 ToolbarItem {
                     Button {
                         print("add new item")
                     } label: {
-                        Image(systemName: "plus").foregroundColor(.orange)
+                        Image(systemName: "plus").foregroundColor(.red)
                     }
                 }
             }
@@ -40,8 +38,8 @@ struct TodayView: View {
     }
 }
 
-struct TodayView_Previews: PreviewProvider {
+struct BacklogView_Previews: PreviewProvider {
     static var previews: some View {
-            TodayView().environmentObject(ItemData())
+        BacklogView().environmentObject(ItemData())
     }
 }

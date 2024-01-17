@@ -9,4 +9,10 @@ import Foundation
 
 class ItemData: ObservableObject {
     @Published var testItems = Item.testItems
+    
+    func backlogItems() -> [Item] {
+        return testItems.filter {
+            $0.dateAssigned == nil
+        }
+    }
 }

@@ -11,7 +11,7 @@ struct ItemView: View {
     var item: Item
     
     var body: some View {
-        HStack(alignment: .top) {
+        HStack(alignment: .firstTextBaseline) {
             Button {
                 print("Done!")
             } label: {

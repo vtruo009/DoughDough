@@ -19,6 +19,7 @@
 		7CE00C5B2B4BB1690041309D /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE00C5A2B4BB1690041309D /* Item.swift */; };
 		7CE00C5E2B4BDEFE0041309D /* TodayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE00C5D2B4BDEFD0041309D /* TodayView.swift */; };
 		7CE00C612B4BE0170041309D /* ItemData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE00C602B4BE0170041309D /* ItemData.swift */; };
+		7CE77DB62B5759D50024DBED /* BacklogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE77DB52B5759D50024DBED /* BacklogView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		7CE00C5A2B4BB1690041309D /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		7CE00C5D2B4BDEFD0041309D /* TodayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayView.swift; sourceTree = "<group>"; };
 		7CE00C602B4BE0170041309D /* ItemData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemData.swift; sourceTree = "<group>"; };
+		7CE77DB52B5759D50024DBED /* BacklogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BacklogView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +156,7 @@
 				7CE00C5D2B4BDEFD0041309D /* TodayView.swift */,
 				7CCECADA2B50C18200618F85 /* MainTabView.swift */,
 				7CCECADC2B50D8BE00618F85 /* ItemView.swift */,
+				7CE77DB52B5759D50024DBED /* BacklogView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -298,6 +301,7 @@
 			files = (
 				7CE00C322B4BAE7E0041309D /* ContentView.swift in Sources */,
 				7CCECADD2B50D8BE00618F85 /* ItemView.swift in Sources */,
+				7CE77DB62B5759D50024DBED /* BacklogView.swift in Sources */,
 				7CE00C5B2B4BB1690041309D /* Item.swift in Sources */,
 				7CE00C5E2B4BDEFE0041309D /* TodayView.swift in Sources */,
 				7CE00C302B4BAE7E0041309D /* TimeDebtApp.swift in Sources */,
