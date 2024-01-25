@@ -17,10 +17,15 @@ struct TodayView: View {
     var body: some View {
         NavigationStack {
             List {
+<<<<<<< HEAD
                 ForEach(itemData.testItems, id: \.self.id) { item in
                     if let date = item.dateAssigned {
                         ItemView(item: item)
                     }
+=======
+                ForEach(itemData.todayItems(), id: \.self.id) { item in
+                        ItemView(item: item)
+>>>>>>> 73fcb3c (Add filter to display Today and Backlog list)
                 }
             }
             .listStyle(PlainListStyle())

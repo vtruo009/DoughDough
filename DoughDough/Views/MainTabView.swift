@@ -13,6 +13,8 @@ struct MainTabView: View {
                 Group {
                     TodayView()
                         .tabItem { Label("Today", systemImage: "list.dash") }
+                    BacklogView()
+                        .tabItem { Label("Backlog", systemImage: "tray.fill") }
                 }
                 .toolbar(.visible, for: .tabBar)
             }
