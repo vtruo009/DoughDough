@@ -13,7 +13,7 @@ struct Item: Identifiable {
     
     var title: String
     var timeToComplete: Int
-    var done: Bool = false
+    var isDone: Bool = false
     var dateAssigned: Date?
     var notes: String
     
@@ -28,6 +28,10 @@ struct Item: Identifiable {
     
     init() {
         self.init(title: "New item", timeToComplete: 0, notes: "", date: nil)
+    }
+    
+    mutating func setDone(_ state: Bool) {
+        isDone = state
     }
 }
 

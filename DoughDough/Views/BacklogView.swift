@@ -11,7 +11,7 @@ struct BacklogView: View {
     @EnvironmentObject var itemData: ItemData
     
     init() {
-        UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor: UIColor.red]
+        UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor: AppColor.backlogColor]
     }
     
     var body: some View {
@@ -30,7 +30,7 @@ struct BacklogView: View {
                     Button {
                         print("add new item")
                     } label: {
-                        Image(systemName: "plus").foregroundColor(.red)
+                        Image(systemName: "plus").foregroundColor(Color(AppColor.backlogColor))
                     }
                 }
             }

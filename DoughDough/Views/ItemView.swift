@@ -8,17 +8,21 @@
 import SwiftUI
 
 struct ItemView: View {
-    var item: Item
+    @State var item: Item
+//    var itemData: ItemData = ItemData()
     
     var body: some View {
         HStack(alignment: .firstTextBaseline) {
             Button {
-                print("Done!")
+                item.isDone.toggle()
             } label: {
-                Image(systemName: item.done ? "circle.inset.filled" : "circle")
+                Image(systemName: item.isDone ? "circle.inset.filled" : "circle")
             }
             VStack(alignment: .leading) {
                 Text("\(item.title)")
+                    .font(.body)
+                    .strikethrough(item.isDone)
+                    .foregroundColor(item.isDone ? Color.gray : Color.black)
                 Text(item.notes)
                     .font(.footnote)
                     .foregroundColor(.gray)
@@ -27,13 +31,25 @@ struct ItemView: View {
                     .foregroundColor(.gray)
             }
             Spacer()
+            Button {
+                print("Display ItemDetailsView")
+            } label: {
+                Image(systemName: "info.circle")
+            }
+            .padding(.trailing, 15)
         }
+        .buttonStyle(BorderlessButtonStyle())
     }
 }
 
 struct ItemView_Previews: PreviewProvider {
-    @State static var testItem: Item = Item.testItems[0]
+//    @State static var testItem: Item = Item.testItems[0]
     static var previews: some View {
-        ItemView(item: testItem)
+        ItemView(item: .init(
+            title: "New item",
+            timeToComplete: 40,
+            notes: "This is a test note",
+            date: nil
+        ))
     }
 }

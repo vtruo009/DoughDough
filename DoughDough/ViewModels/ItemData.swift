@@ -21,4 +21,16 @@ class ItemData: ObservableObject {
             $0.dateAssigned == nil
         }
     }
+    
+    func index(of item: Item) -> Int? {
+        print("item: \(item.id)")
+        for i in testItems.indices {
+            print("copy: \( testItems[i].id)")
+            if testItems[i].id == item.id {
+                return i
+            }
+        }
+        return nil
+    }
+    
 }
