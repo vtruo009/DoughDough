@@ -10,10 +10,6 @@ import SwiftUI
 struct BacklogView: View {
     @EnvironmentObject var itemData: ItemData
     
-    init() {
-        UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor: AppColor.backlogColor]
-    }
-    
     var body: some View {
         NavigationStack {
             List {
@@ -30,7 +26,7 @@ struct BacklogView: View {
                     Button {
                         print("add new item")
                     } label: {
-                        Image(systemName: "plus").foregroundColor(Color(AppColor.backlogColor))
+                        Image(systemName: "plus")
                     }
                 }
             }

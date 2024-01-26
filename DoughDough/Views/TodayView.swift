@@ -10,15 +10,11 @@ import SwiftUI
 struct TodayView: View {
     @EnvironmentObject var itemData: ItemData
     
-    init() {
-        UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor: AppColor.todayColor]
-    }
-    
     var body: some View {
         NavigationStack {
             List {
                 ForEach(itemData.testItems, id: \.self.id) { item in
-                    if let date = item.dateAssigned {
+                    if let _ = item.dateAssigned {
                         ItemView(item: item)
                     }
                 }
@@ -32,7 +28,7 @@ struct TodayView: View {
                     Button {
                         print("add new item")
                     } label: {
-                        Image(systemName: "plus").foregroundColor(Color(AppColor.todayColor))
+                        Image(systemName: "plus")
                     }
                 }
             }

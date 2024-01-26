@@ -9,7 +9,6 @@ import SwiftUI
 
 struct ItemView: View {
     @State var item: Item
-//    var itemData: ItemData = ItemData()
     
     var body: some View {
         HStack(alignment: .firstTextBaseline) {
