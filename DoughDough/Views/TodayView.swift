@@ -9,6 +9,7 @@ import SwiftUI
 
 struct TodayView: View {
     @EnvironmentObject var itemData: ItemData
+    @State private var isPresenting: Bool = false
     
     var body: some View {
         NavigationStack {
@@ -27,9 +28,31 @@ struct TodayView: View {
                 ToolbarItem {
                     Button {
                         print("add new item")
+                        isPresenting = true
                     } label: {
                         Image(systemName: "plus")
                     }
+                }
+            }
+            .sheet(isPresented: $isPresenting) {
+                NavigationStack {
+                    Text("Heelloooo")
+                        .toolbar {
+                            ToolbarItem(placement: .cancellationAction) {
+                                Button("Cancel") {
+                                    isPresenting = false
+                                }
+                            }
+                            ToolbarItem(placement: .principal) {
+                                Text("Details")
+                                    .bold()
+                            }
+                            ToolbarItem(placement: .confirmationAction) {
+                                Button("Save") {
+                                    isPresenting = false
+                                }
+                            }
+                        }
                 }
             }
         }

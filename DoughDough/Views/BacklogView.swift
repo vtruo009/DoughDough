@@ -9,6 +9,7 @@ import SwiftUI
 
 struct BacklogView: View {
     @EnvironmentObject var itemData: ItemData
+    @State private var isPresenting: Bool = false
     
     var body: some View {
         NavigationStack {
@@ -25,6 +26,7 @@ struct BacklogView: View {
                 ToolbarItem {
                     Button {
                         print("add new item")
+                        isPresenting = true
                     } label: {
                         Image(systemName: "plus")
                     }
