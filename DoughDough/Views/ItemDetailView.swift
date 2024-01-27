@@ -25,8 +25,8 @@ struct ItemDetailView: View {
 }
 
 struct ItemDetailView_Previews: PreviewProvider {
-    @State static var testItem: Item = Item()
+    @State static var item: Item = Item()
     static var previews: some View {
-        ItemDetailView(item: $testItem)
+        ItemDetailView(item: $item)
     }
 }

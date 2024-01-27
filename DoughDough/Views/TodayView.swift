@@ -10,6 +10,7 @@ import SwiftUI
 struct TodayView: View {
     @EnvironmentObject var itemData: ItemData
     @State private var isPresenting: Bool = false
+    @State private var newItem: Item = Item()
     
     var body: some View {
         NavigationStack {
@@ -36,7 +37,7 @@ struct TodayView: View {
             }
             .sheet(isPresented: $isPresenting) {
                 NavigationStack {
-                    Text("Heelloooo")
+                    ItemDetailView(item: $newItem)
                         .toolbar {
                             ToolbarItem(placement: .cancellationAction) {
                                 Button("Cancel") {
@@ -49,7 +50,9 @@ struct TodayView: View {
                             }
                             ToolbarItem(placement: .confirmationAction) {
                                 Button("Save") {
+                                    itemData.testItems.append(newItem)
                                     isPresenting = false
+                                    // Need to save data to json
                                 }
                             }
                         }

@@ -42,7 +42,6 @@ struct ItemView: View {
 }
 
 struct ItemView_Previews: PreviewProvider {
-//    @State static var testItem: Item = Item.testItems[0]
     static var previews: some View {
         ItemView(item: .init(
             title: "New item",

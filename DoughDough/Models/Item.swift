@@ -29,10 +29,6 @@ struct Item: Identifiable {
     init() {
         self.init(title: "New item", timeToComplete: 0, notes: "", date: nil)
     }
-    
-    mutating func setDone(_ state: Bool) {
-        isDone = state
-    }
 }
 
 extension Item {
