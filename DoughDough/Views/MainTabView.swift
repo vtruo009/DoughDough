@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct MainTabView: View {
+    @StateObject var itemData: ItemData = ItemData()
+    
     var body: some View {
             TabView {
                 Group {
@@ -18,12 +20,15 @@ struct MainTabView: View {
                 }
                 .toolbar(.visible, for: .tabBar)
             }
-            .environmentObject(ItemData())
+            .environmentObject(itemData)
+            .onAppear {
+                itemData.loadItems()
+            }
     }
 }
 
 struct MainTabView_Previews: PreviewProvider {
     static var previews: some View {
-            MainTabView().environmentObject(ItemData())
+            MainTabView()
     }
 }

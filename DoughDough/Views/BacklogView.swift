@@ -26,6 +26,7 @@ struct BacklogView: View {
             .toolbar {
                 ToolbarItem {
                     Button {
+                        print("add new item in backlog")
                         isPresenting = true
                     } label: {
                         Image(systemName: "plus")
@@ -46,13 +47,15 @@ struct BacklogView: View {
                                     .bold()
                             }
                             ToolbarItem(placement: .confirmationAction) {
-                                Button("Save") {
-                                    itemData.testItems.append(newItem)
+                                Button("Done") {
+                                    itemData.addItem(item: newItem)
                                     isPresenting = false
-                                    // Need to save data to json
                                 }
                             }
                         }
+                }
+                .onDisappear {
+                    itemData.saveItems()
                 }
             }
         }

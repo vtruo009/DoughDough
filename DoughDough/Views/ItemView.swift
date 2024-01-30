@@ -9,6 +9,8 @@ import SwiftUI
 
 struct ItemView: View {
     @State var item: Item
+    @State var isPresenting: Bool = false
+    @EnvironmentObject private var itemData: ItemData
     
     var body: some View {
         HStack(alignment: .firstTextBaseline) {
@@ -32,12 +34,42 @@ struct ItemView: View {
             Spacer()
             Button {
                 print("Display ItemDetailsView")
+                isPresenting = true
             } label: {
                 Image(systemName: "info.circle")
             }
             .padding(.trailing, 15)
         }
         .buttonStyle(BorderlessButtonStyle())
+        .swipeActions {
+            Button("Delete") {
+                print("Deleted item!")
+                itemData.removeItem(item: item)
+            }
+            .tint(.red)
+        }
+        .sheet(isPresented: $isPresenting) {
+            NavigationStack {
+                ItemDetailView(item: $item)
+                    .toolbar {
+                        ToolbarItem(placement: .cancellationAction) {
+                            Button("Cancel") {
+                                isPresenting = false
+                            }
+                        }
+                        ToolbarItem(placement: .principal) {
+                            Text("Details")
+                                .bold()
+                        }
+                        ToolbarItem(placement: .confirmationAction) {
+                            Button("Done") {
+                                isPresenting = false
+                                itemData.saveItems()
+                            }
+                        }
+                    }
+            }
+        }
     }
 }
 
