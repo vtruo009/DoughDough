@@ -17,7 +17,7 @@ struct Item: Identifiable, Codable {
     var dateAssigned: Date?
     var notes: String
     
-    init(title: String, timeToComplete: Int, notes: String, date: Date?) {
+    init(title: String = "New item", timeToComplete: Int = 0, notes: String = "", date: Date?) {
         self.title = title
         self.timeToComplete = timeToComplete
         self.notes = notes

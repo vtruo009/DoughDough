@@ -41,12 +41,19 @@ struct ItemView: View {
             .padding(.trailing, 15)
         }
         .buttonStyle(BorderlessButtonStyle())
-        .swipeActions {
+        .swipeActions(edge: .trailing) {
             Button("Delete") {
                 print("Deleted item!")
                 itemData.removeItem(item: item)
             }
             .tint(.red)
+        }
+        .swipeActions(edge: .leading) {
+            Button("Move to Today") {
+                print("Move to Today")
+                itemData.moveToToday(item: item)
+            }
+            .tint(.blue)
         }
         .sheet(isPresented: $isPresenting) {
             NavigationStack {

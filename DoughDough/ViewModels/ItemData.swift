@@ -45,6 +45,15 @@ class ItemData: ObservableObject {
         saveItems()
     }
     
+    func moveToToday(item: Item) {
+        guard let indx = index(of: item) else {
+            print("Error: cannot find item to move to Today!")
+            return
+        }
+        testItems[indx].dateAssigned = Date.now
+        saveItems()
+    }
+    
     private var itemsFileURL: URL {
         do {
             let documentsDirectory = try FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
