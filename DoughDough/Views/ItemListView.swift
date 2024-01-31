@@ -11,13 +11,13 @@ struct ItemListView: View {
     @EnvironmentObject var itemData: ItemData
     @State private var isPresenting: Bool = false
     @State private var newItem: Item = Item()
-    let viewStyle: ViewStyle
+    var viewStyle: ViewStyle
     
     var body: some View {
         NavigationStack {
             List {
                 ForEach(items, id: \.self.id) { item in
-                    ItemView(item: item)
+                    ItemView(item: item, viewStyle: viewStyle)
                 }
             }
             .listStyle(PlainListStyle())
@@ -27,7 +27,7 @@ struct ItemListView: View {
             .toolbar {
                 ToolbarItem {
                     Button {
-                        print("add new item in backlog")
+                        print("add new item")
                         isPresenting = true
                     } label: {
                         Image(systemName: "plus")

@@ -36,7 +36,7 @@ class ItemData: ObservableObject {
         saveItems()
     }
     
-    func removeItem(item: Item) {
+    func deleteItem(item: Item) {
         guard let indx = index(of: item) else {
             print("Error: cannot find item to remove!")
             return
@@ -45,12 +45,16 @@ class ItemData: ObservableObject {
         saveItems()
     }
     
-    func moveToToday(item: Item) {
+    func moveItem(item: Item) {
         guard let indx = index(of: item) else {
-            print("Error: cannot find item to move to Today!")
+            print("Error: cannot find item to move!")
             return
         }
-        testItems[indx].dateAssigned = Date.now
+        if item.dateAssigned == nil {
+            testItems[indx].dateAssigned = Date.now
+        } else {
+            testItems[indx].dateAssigned = nil
+        }
         saveItems()
     }
     

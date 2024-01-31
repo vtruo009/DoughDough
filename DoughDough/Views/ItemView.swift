@@ -11,6 +11,7 @@ struct ItemView: View {
     @State var item: Item
     @State var isPresenting: Bool = false
     @EnvironmentObject private var itemData: ItemData
+    @State var viewStyle: ItemListView.ViewStyle
     
     var body: some View {
         HStack(alignment: .firstTextBaseline) {
@@ -44,14 +45,14 @@ struct ItemView: View {
         .swipeActions(edge: .trailing) {
             Button("Delete") {
                 print("Deleted item!")
-                itemData.removeItem(item: item)
+                itemData.deleteItem(item: item)
             }
             .tint(.red)
         }
         .swipeActions(edge: .leading) {
-            Button("Move to Today") {
-                print("Move to Today")
-                itemData.moveToToday(item: item)
+            Button("\(viewStyle == ItemListView.ViewStyle.backlog ? "Assign" : "Unassign")") {
+                print("moved item to \(viewStyle.rawValue)")
+                itemData.moveItem(item: item)
             }
             .tint(.blue)
         }
@@ -71,11 +72,11 @@ struct ItemView: View {
                         ToolbarItem(placement: .confirmationAction) {
                             Button("Done") {
                                 isPresenting = false
-                                itemData.saveItems()
                             }
                         }
                     }
             }
+            .onDisappear { itemData.saveItems() }
         }
     }
 }
@@ -87,6 +88,6 @@ struct ItemView_Previews: PreviewProvider {
             timeToComplete: 40,
             notes: "This is a test note",
             date: nil
-        ))
+        ), viewStyle: ItemListView.ViewStyle.backlog)
     }
 }
