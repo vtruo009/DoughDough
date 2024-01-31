@@ -7,22 +7,23 @@
 
 import SwiftUI
 
-struct BacklogView: View {
+struct ItemListView: View {
     @EnvironmentObject var itemData: ItemData
     @State private var isPresenting: Bool = false
     @State private var newItem: Item = Item()
+    let viewStyle: ViewStyle
     
     var body: some View {
         NavigationStack {
             List {
-                ForEach(itemData.backlogItems(), id: \.self.id) { item in
+                ForEach(items, id: \.self.id) { item in
                     ItemView(item: item)
                 }
             }
             .listStyle(PlainListStyle())
             .background(.white)
             .scrollContentBackground(.hidden)
-            .navigationTitle("Backlog")
+            .navigationTitle(viewStyle.rawValue)
             .toolbar {
                 ToolbarItem {
                     Button {
@@ -48,6 +49,9 @@ struct BacklogView: View {
                             }
                             ToolbarItem(placement: .confirmationAction) {
                                 Button("Done") {
+                                    if case .today = viewStyle {
+                                        newItem.dateAssigned = Date.now
+                                    }
                                     itemData.addItem(item: newItem)
                                     isPresenting = false
                                 }
@@ -62,8 +66,24 @@ struct BacklogView: View {
     }
 }
 
-struct BacklogView_Previews: PreviewProvider {
+extension ItemListView {
+    enum ViewStyle: String {
+        case backlog = "Backlog"
+        case today = "Today"
+    }
+    
+    private var items: [Item] {
+        switch viewStyle {
+            case .backlog:
+                return itemData.backlogItems()
+            case .today:
+                return itemData.todayItems()
+        }
+    }
+}
+
+struct ItemListView_Previews: PreviewProvider {
     static var previews: some View {
-        BacklogView().environmentObject(ItemData())
+        ItemListView(viewStyle: .backlog).environmentObject(ItemData())
     }
 }

@@ -13,9 +13,9 @@ struct MainTabView: View {
     var body: some View {
             TabView {
                 Group {
-                    BacklogView()
+                    ItemListView(viewStyle: .backlog)
                         .tabItem { Label("Backlog", systemImage: "tray.fill") }
-                    TodayView()
+                    ItemListView(viewStyle: .today)
                         .tabItem { Label("Today", systemImage: "list.dash") }
                 }
                 .toolbar(.visible, for: .tabBar)
