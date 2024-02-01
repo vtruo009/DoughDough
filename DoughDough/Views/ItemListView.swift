@@ -17,7 +17,7 @@ struct ItemListView: View {
         NavigationStack {
             List {
                 ForEach(items, id: \.self.id) { item in
-                    ItemView(item: item, viewStyle: viewStyle)
+                    ItemView(item: binding(item: item), viewStyle: viewStyle)
                 }
             }
             .listStyle(PlainListStyle())
@@ -79,6 +79,13 @@ extension ItemListView {
             case .today:
                 return itemData.todayItems()
         }
+    }
+    
+    func binding(item: Item) -> Binding<Item> {
+        guard let indx = itemData.index(of: item) else {
+            fatalError("Item not found")
+        }
+        return $itemData.testItems[indx]
     }
 }
 

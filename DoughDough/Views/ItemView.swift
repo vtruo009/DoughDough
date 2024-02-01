@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ItemView: View {
-    @State var item: Item
+    @Binding var item: Item
     @State var isPresenting: Bool = false
     @EnvironmentObject private var itemData: ItemData
     @State var viewStyle: ItemListView.ViewStyle
@@ -25,9 +25,11 @@ struct ItemView: View {
                     .font(.body)
                     .strikethrough(item.isDone)
                     .foregroundColor(item.isDone ? Color.gray : Color.black)
-                Text(item.notes)
-                    .font(.footnote)
-                    .foregroundColor(.gray)
+                if !item.notes.isEmpty {
+                    Text(item.notes)
+                        .font(.footnote)
+                        .foregroundColor(.gray)
+                }
                 Text("\(item.timeToComplete) mins")
                     .font(.footnote)
                     .foregroundColor(.gray)
@@ -72,6 +74,8 @@ struct ItemView: View {
                         ToolbarItem(placement: .confirmationAction) {
                             Button("Done") {
                                 isPresenting = false
+                                print($item)
+                                print(itemData.testItems)
                             }
                         }
                     }
@@ -82,12 +86,11 @@ struct ItemView: View {
 }
 
 struct ItemView_Previews: PreviewProvider {
+    @State static var item: Item = Item(title: "New item",
+                                 timeToComplete: 40,
+                                 notes: "",
+                                 date: nil)
     static var previews: some View {
-        ItemView(item: .init(
-            title: "New item",
-            timeToComplete: 40,
-            notes: "This is a test note",
-            date: nil
-        ), viewStyle: ItemListView.ViewStyle.backlog)
+        ItemView(item: $item, viewStyle: ItemListView.ViewStyle.backlog)
     }
 }

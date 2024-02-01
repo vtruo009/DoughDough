@@ -33,8 +33,8 @@ struct Item: Identifiable, Codable {
 
 extension Item {
     static let testItems: [Item] = [
-        Item(title: "Build portfolio project", timeToComplete: 60, notes: "This is a test note", date: Date()),
-        Item(title: "Buy milk", timeToComplete: 15, notes: "This is a test note", date: nil),
-        Item(title: "Dishes", timeToComplete: 30, notes: "This is a test note", date: nil),
+        Item(title: "Build portfolio project", timeToComplete: 60, notes: "Make some progress everyday", date: Date()),
+        Item(title: "Buy milk", timeToComplete: 15, notes: "", date: nil),
+        Item(title: "Dishes", timeToComplete: 30, notes: "Wash all cups first", date: nil),
     ]
 }

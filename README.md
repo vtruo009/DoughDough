@@ -10,8 +10,6 @@ The status bar at the top of the screen displays the amount of time planned for 
 
 The time debt will also display in the status bar to give a visual reminder that procrastinating today will only set us up for failure tomorrow.
 
-<video src="Simulator%20Screen%20Recording%20-%20iPhone%2014%20Pro%20-%202024-01-31%20at%2011.59.05.mp4" controls title="Title"></video>
-
 ## Getting Started
 
 Requirements: Xcode 14, Swift 5, and iOS 16
