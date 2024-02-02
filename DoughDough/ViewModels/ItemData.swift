@@ -68,7 +68,6 @@ class ItemData: ObservableObject {
     }
     
     func saveItems() {
-        print("Saving...: \(testItems)")
         do {
             let encodedData = try JSONEncoder().encode(testItems)
             try encodedData.write(to: itemsFileURL)
@@ -84,7 +83,6 @@ class ItemData: ObservableObject {
         do {
             let savedItems = try JSONDecoder().decode([Item].self, from: decodedData)
             testItems = savedItems
-            print("after loading: \(testItems)")
         } catch {
             fatalError("An error occurred while loading data: \(error)")
         }

@@ -74,8 +74,6 @@ struct ItemView: View {
                         ToolbarItem(placement: .confirmationAction) {
                             Button("Done") {
                                 isPresenting = false
-                                print($item)
-                                print(itemData.testItems)
                             }
                         }
                     }
