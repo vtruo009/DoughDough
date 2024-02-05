@@ -11,10 +11,16 @@ struct ItemListView: View {
     @EnvironmentObject var itemData: ItemData
     @State private var isPresenting: Bool = false
     @State private var newItem: Item = Item()
+    @State var percentCompleted = 64.0
     var viewStyle: ViewStyle
     
     var body: some View {
+        @State var itemStats = itemData.calculateItemStats()
+        
         NavigationStack {
+            if viewStyle == .today {
+                InfoSectionView(totalTime: $itemStats.duration, percentage: $itemStats.percentage)
+            }
             List {
                 ForEach(items, id: \.self.id) { item in
                     ItemView(item: binding(item: item), viewStyle: viewStyle)
@@ -87,6 +93,10 @@ extension ItemListView {
         }
         return $itemData.testItems[indx]
     }
+    
+//    var itemStats: (Duration, Double) {
+//        itemData.calculateItemStats()
+//    }
 }
 
 struct ItemListView_Previews: PreviewProvider {

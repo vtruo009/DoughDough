@@ -58,6 +58,23 @@ class ItemData: ObservableObject {
         saveItems()
     }
     
+    func calculateItemStats() -> (duration: Duration, percentage: Double) {
+        var totalHour: Int = 0
+        var totalMin: Int = 0
+        var totalItemDone: Int = 0
+        let numOfItems: Int = todayItems().count
+        
+        for item in todayItems() {
+            totalHour += item.duration.hour
+            totalMin += item.duration.minute
+            if item.isDone {
+                totalItemDone += 1
+            }
+        }
+        
+        return (duration: Duration(hour: totalHour, minute: totalMin), percentage: Double(totalItemDone / numOfItems))
+    }
+    
     private var itemsFileURL: URL {
         do {
             let documentsDirectory = try FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
