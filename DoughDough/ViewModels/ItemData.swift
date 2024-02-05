@@ -84,7 +84,9 @@ class ItemData: ObservableObject {
             let savedItems = try JSONDecoder().decode([Item].self, from: decodedData)
             testItems = savedItems
         } catch {
-            fatalError("An error occurred while loading data: \(error)")
+            // TODO: Investigate reason for preview crash here
+//            fatalError("An error occurred while loading data: \(error)")
+            print(error)
         }
     }
 }

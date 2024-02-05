@@ -8,17 +8,31 @@
 import SwiftUI
 
 struct ItemDetailView: View {
+    let hourRange = 0...11
+    let minuteRange = 0...59
+    
     @Binding var item: Item
     
     var body: some View {
         Form {
             TextField("", text: $item.title)
             TextField("Notes", text: $item.notes)
-            HStack {
-                Text("Time to Complete:")
-                TextField("minutes", value: $item.timeToComplete, format: .number)
-                    .multilineTextAlignment(.trailing)
-                    .keyboardType(.numbersAndPunctuation)
+            HStack(spacing: 0) {
+                Text("Duration:")
+                Picker("", selection: $item.duration.hour) {
+                    ForEach(hourRange, id: \.self) { hour in
+                        Text("\(hour)")
+                    }
+                }
+                .pickerStyle(.wheel)
+                Text("h")
+                Picker("", selection: $item.duration.minute) {
+                    ForEach(minuteRange, id: \.self) { minute in
+                        Text("\(minute)")
+                    }
+                }
+                .pickerStyle(.wheel)
+                Text("m")
             }
         }
     }

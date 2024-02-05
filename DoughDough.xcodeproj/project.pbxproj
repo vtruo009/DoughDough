@@ -87,6 +87,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7C49A7BB2B702C35000185D9 /* Status */ = {
+			isa = PBXGroup;
+			children = (
+				7C0C3DA72B6C2BBF004C18E8 /* ProgressBarView.swift */,
+			);
+			path = Status;
+			sourceTree = "<group>";
+		};
 		7CE00C232B4BAE7E0041309D = {
 			isa = PBXGroup;
 			children = (
@@ -157,11 +165,11 @@
 		7CE00C5C2B4BDED40041309D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				7C49A7BB2B702C35000185D9 /* Status */,
 				7CCECADA2B50C18200618F85 /* MainTabView.swift */,
 				7CCECADC2B50D8BE00618F85 /* ItemView.swift */,
 				7CE77DB52B5759D50024DBED /* ItemListView.swift */,
 				7CE77DBD2B633B170024DBED /* ItemDetailView.swift */,
-				7C0C3DA72B6C2BBF004C18E8 /* ProgressBarView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";

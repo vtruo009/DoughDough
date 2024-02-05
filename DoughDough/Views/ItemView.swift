@@ -30,7 +30,7 @@ struct ItemView: View {
                         .font(.footnote)
                         .foregroundColor(.gray)
                 }
-                Text("\(item.timeToComplete) mins")
+                Text(item.formattedDuration)
                     .font(.footnote)
                     .foregroundColor(.gray)
             }
@@ -85,7 +85,7 @@ struct ItemView: View {
 
 struct ItemView_Previews: PreviewProvider {
     @State static var item: Item = Item(title: "New item",
-                                 timeToComplete: 40,
+                                 timeToComplete: TimeToComplete(hour: 0, minute: 40),
                                  notes: "",
                                  date: nil)
     static var previews: some View {
