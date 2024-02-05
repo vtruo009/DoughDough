@@ -16,8 +16,6 @@ struct InfoSectionView: View {
     @Binding var percentage: Double
     
     var body: some View {
-        let multiplier: Double = width / 100
-
         HStack {
             ZStack {
                 RoundedRectangle(cornerRadius: 15)
@@ -26,7 +24,7 @@ struct InfoSectionView: View {
                 Text("\(totalTime.formattedDuration(style: .vertical))").multilineTextAlignment(.center)
             }
             VStack {
-                Text("\(percentage.formatted())% completed")
+                Text("\(percentage.formatted(.percent)) completed")
                 ZStack(alignment: .leading) {
                     RoundedRectangle(cornerRadius: cornerRadius)
                         .fill(.black.opacity(0.1))
@@ -34,7 +32,7 @@ struct InfoSectionView: View {
                         .padding([.leading, .trailing])
                     RoundedRectangle(cornerRadius: cornerRadius)
                         .fill(.orange)
-                        .frame(width: percentage * multiplier, height: height)
+                        .frame(width: percentage * width, height: height)
                         .padding([.leading, .trailing])
                 }
             }
@@ -44,7 +42,7 @@ struct InfoSectionView: View {
 
 struct ProgressBarView_Previews: PreviewProvider {
     @State static var totalTime = Duration(hour: 4, minute: 14)
-    @State static var percentage = 71.2
+    @State static var percentage = round(0.6666666666 * 100) / 100
     
     static var previews: some View {
         InfoSectionView(totalTime: $totalTime, percentage: $percentage)

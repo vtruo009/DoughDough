@@ -71,8 +71,9 @@ class ItemData: ObservableObject {
                 totalItemDone += 1
             }
         }
-        
-        return (duration: Duration(hour: totalHour, minute: totalMin), percentage: Double(totalItemDone / numOfItems))
+        // round to 2 places
+        let percentage = round(Double(totalItemDone) / Double(numOfItems) * 100) / 100
+        return (duration: Duration(hour: totalHour, minute: totalMin), percentage: percentage)
     }
     
     private var itemsFileURL: URL {

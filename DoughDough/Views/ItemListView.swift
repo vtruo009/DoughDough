@@ -11,7 +11,6 @@ struct ItemListView: View {
     @EnvironmentObject var itemData: ItemData
     @State private var isPresenting: Bool = false
     @State private var newItem: Item = Item()
-    @State var percentCompleted = 64.0
     var viewStyle: ViewStyle
     
     var body: some View {
@@ -101,6 +100,6 @@ extension ItemListView {
 
 struct ItemListView_Previews: PreviewProvider {
     static var previews: some View {
-        ItemListView(viewStyle: .backlog).environmentObject(ItemData())
+        ItemListView(viewStyle: .today).environmentObject(ItemData())
     }
 }
